@@ -8,15 +8,15 @@ We do not require any additional libraries for this week's exercise. :-)
 
 ## Check the Code
 Have a look at the code:
-- Account.py: The Account class. Currently a data container.
-- Bank.py: The Bank class. Currently a god class (having all the responsibilities/behaviours).
-- Branch.py: The Branch class. Currently a data container.
-- client.py: A client program that uses the Bank class.
-- Customer.py: The Customer class. Currently a data container.
-- Payroll.py: The Payroll class, internally using PaySchedule.
-- PaySchedule.py: The PaySchedule class. No need to edit this class.
-- Staff.py: The Staff class. No need to edit this class.
-- tests/test_client.py: A test case for the client program.
+- `Account.py`: The Account class. Currently a data container.
+- `Bank.py`: The Bank class. Currently a god class (having all the responsibilities/behaviours).
+- `Branch.py`: The Branch class. Currently a data container.
+- `client.py`: A client program that uses the Bank class.
+- `Customer.py`: The Customer class. Currently a data container.
+- `Payroll.py`: The Payroll class, internally using PaySchedule.
+- `PaySchedule.py`: The PaySchedule class. No need to edit this class.
+- `Staff.py`: The Staff class. No need to edit this class.
+- `tests/test_client.py`: A test case for the client program.
 
 You can run the regression test case by executing the following command:
 ```bash
@@ -33,7 +33,7 @@ Specifically, you should consider the following reengineering patterns:
 - Split up god class
 
 Note that you may need to update the client code to use the new classes.
-Make sure you do not remove client's behaviours (i.e., do not remove assertions; just update them if needed).
+Make sure you do not remove client's behaviours, i.e., **do not remove assertions** (just update them if needed).
 
 After the reengineering, the regression test case should still pass.
 
