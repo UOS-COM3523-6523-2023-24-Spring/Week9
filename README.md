@@ -1,5 +1,4 @@
-# Week9
-Week 9 - Redistribute Responsibilities
+# Week9 - Redistribute Responsibilities
 
 ## Agenda
 - Apply reengineering patterns to redistribute responsibilities.
