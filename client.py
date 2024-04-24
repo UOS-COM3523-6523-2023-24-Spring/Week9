@@ -18,7 +18,7 @@ def client():
     assert branch_london.get_opening_time() == "8:00"
 
     staff_john = Staff(name="John")
-    bank.add_staff_member(branch=branch_london, staff=staff_john)
+    branch_london.add_staff(staff_john)
     assert staff_john in branch_london.get_staff()
 
     branch_sheffield = Branch(location="Sheffield")
