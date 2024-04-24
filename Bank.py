@@ -10,7 +10,7 @@ class Bank:
         self.accounts = []
         self.customers = []
         self.branches = []
-        self.payroll = None
+        # self.payroll = None  # this can be removed as the client does not use it as a part of Bank anymore
 
     def setup_branch(self, branch: Branch):
         self.branches.append(branch)
@@ -29,7 +29,3 @@ class Bank:
     def close_account(self, account: Account):
         account.close_account()
         self.accounts.remove(account)
-
-    def change_payroll_date(self, payroll: Payroll, date: str, staff_category: str):
-        self.payroll = payroll
-        self.payroll.get_staff_category_pay_schedule(staff_category).set_pay_date(date)

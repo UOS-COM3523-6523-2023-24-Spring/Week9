@@ -56,7 +56,7 @@ def client():
     assert account_alice not in bank.accounts
 
     payroll = Payroll()
-    bank.change_payroll_date(payroll=payroll, date="31", staff_category="Manager")
+    payroll.set_staff_category_pay_schedule(staff_category="Manager", date="31")
     assert payroll.get_staff_category_pay_day("Manager") == "31"
 
     return True
